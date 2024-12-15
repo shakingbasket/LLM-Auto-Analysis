@@ -16,15 +16,6 @@ HEADERS = {
     "Content-Type": "application/json",
 }
 
-# def fetch_models():
-#     url = "https://aiproxy.sanand.workers.dev/openai/v1/models"
-#     response = requests.get(url, headers=HEADERS)
-#     if response.status_code == 200:
-#         return response.json().get("data", [])
-#     else:
-#         print("Error fetching models:", response.status_code, response.text)
-#         return []
-
 def analyze_with_llm(prompt):
     """Send a prompt to the LLM via the proxy and retrieve its response."""
     payload = {
